@@ -1,5 +1,7 @@
 module AssignToGroup where
 
+-- cycle [start..end] Generates an infinite list of elements in order start -> stop
+
 assignToGroups n aList = zip groups aList
                          where 
                             groups = cycle [1..n]
