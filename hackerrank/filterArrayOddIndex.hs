@@ -1,4 +1,4 @@
-module FilterArrayOddIndex where 
+module Main where 
 -- hackerrank Problem
 
 f :: [Int] -> [Int]
