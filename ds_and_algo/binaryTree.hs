@@ -17,4 +17,8 @@ treeSum :: Num a => BinTree a -> a
 treeSum Empty = 0
 treeSum (NodeBT a left right) = a + treeSum left + treeSum right
 
+preorder :: BinTree a -> [a]
+preorder Empty = []
+preorder (NodeBT a left right) = [a] ++ preorder left ++ preorder right
+
 tree = NodeBT 5 (NodeBT 8 (NodeBT 3 Empty Empty) (NodeBT 1 Empty Empty)) (NodeBT 6 Empty (NodeBT 4 Empty Empty))
